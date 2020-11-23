@@ -31,15 +31,15 @@
                 <a class="nav-link" href="#">홈으로</a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item" style="padding-left: 1em;">
                 <a class="nav-link" href="#">회원제게시판</a>
             </li>
             
-            <li class="nav-item">
+            <li class="nav-item" style="padding-left: 1em;">
                 <a class="nav-link" href="#">자료실</a>
             </li>
             
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" style="padding-left: 1em;">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">임시Menu</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Link 1</a>
@@ -47,16 +47,28 @@
                     <a class="dropdown-item" href="#">Link 3</a>
                 </div>
             </li>
-        <form class="nav-item form-inline" action="/action_page.php">
-            <input class="form-control mr-sm-2" type="text" placeholder="검색">
-            <button class="btn" type="submit"><i class='fas fa-search'></i></button>
+            
+        <form class="nav-item form-inline" action="/action_page.php" 
+        	style="padding-left: 1em;">
+            <input class="form-control mr-sm-2" type="text" placeholder="검색"
+            	style="border-radius: 3px 0 0 3px;">
+            <button class="btn" type="submit" style="background-color: white; border: 1px solid gray; 
+            	border-radius: 0 3px 3px 0; margin-left: -5px; padding: 6px; padding-left: 10px;
+            	padding-right: 10px;" >
+            	<i class='fas fa-search'></i>
+            </button>
         </form>
-        
-        	<li class="nav-item d-flex flex-row-reverse">
-         		<a class="nav-link p-2" href="#"><i class='fas fa-sign-in-alt'></i>로그인</a> 
-         		<a class="nav-link p-2" href="#"><span class="glyphicon">&#xe008;</span>회원가입</a>
-         	</li>
+
+		<form class="d-flex flex-row-reverse" style="margin-left: 77em; padding-top: 8px;" >
+		
+	        <span style="padding-left: 5px;"><a class="nav-link p-2" href="#"><i class='fas fa-sign-in-alt'></i>로그인</a></span>
+	        <span><a class="nav-link p-2" href="#"><span class="glyphicon">&#xe008;</span>회원가입</a></span>
+		
+		</form>
+         		
         </ul>
+        
+
         
     </nav>
 
@@ -111,10 +123,37 @@
 
                 </div>
                 <br />
-                <div>
+                <div class="d-flex flex-row-reverse">
+                	<button type="button" style="border: 1px solid gray; background-color: white;
+                		border-radius: 0 3px 3px 0; padding-left: 15px; padding-right: 10px;
+                		margin-left: -5px;">
+                		<i class='fas fa-search'></i></button>
+                
+                	<input type="text" style="border-radius: 3px 0 0 3px; border: 1px solid gray;">
+                	
+                	<div class="dropdown">
+                		<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"
+                			style="border: 1px solid gray; padding-left: -3px;">
+                			제목
+                		</button>
+                		&nbsp;
+                		    <div class="dropdown-menu">
+						      <a class="dropdown-item" href="#">제목</a>
+						      <a class="dropdown-item" href="#">작성자</a>
+						      <a class="dropdown-item" href="#">작성일</a>
+						    </div>
+                	</div>
+            <!--     	
+                	<select name="cars" style="padding: 3px; border-radius: 3px 3px 3px 3px;
+                		margin-left: 4px;">
+                		<option value="제목" >제목</option>
+                		<option value="작성자">작성자</option>
+                		<option value="작성일">작성일</option>
+                	</select> -->
                 	
                 </div>
-
+				
+				<br />
 
                 <!-- 게시판리스트부분 -->
                 <table class="table table-bordered table-hover table-striped">
@@ -127,7 +166,7 @@
                         <col width="60px" />
                     </colgroup>
                     <thead>
-                        <tr style="background-color: rgb(133, 133, 133);" class="text-center text-white table-success text-body">
+                        <tr style="background-color: rgb(133, 133, 133);" class="text-center table-success text-body">
                             <th>번호</th>
                             <th>제목</th>
                             <th>작성자</th>
@@ -208,7 +247,7 @@
 				</div>				
 				<br />
                 <!-- 페이지 번호 삽입-->
-                <ul class="pagination justify-content-center">
+                <ul class="pagination justify-content-center" style="margin-left: 15em;">
                     <li class="page-item"><a class="page-link" href="#"><i class='far fa-hand-point-left'></i></a></li>
                     <li class="page-item"><a class="page-link"  href="#"><i class='fas fa-fast-backward'></i></a></li>
                     <li class="page-item"><a class="page-link" href="#page=1">1</a></li>
@@ -221,6 +260,16 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <br />
+    <div class="row">
+    	<div class="col"></div>
+    	<div class="col">
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email : jhnum1313@gmail.com&nbsp;Mobile : 010-2940-0710&nbsp;Address : 경기도 광명시 하안로<br />
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	    	copyright 2019 한국소프트웨어인재개발원. Allright reserved.
+    	</div>
+    	<div class="col"></div>
 
     </div>
 </body>
